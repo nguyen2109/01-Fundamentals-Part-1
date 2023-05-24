@@ -1,5 +1,5 @@
-let js = 'amazing'
+let js = 'amazing';
 if (js === 'amazing') {
-    alert('JS thật tuyệt vời')
+  alert('JS thật tuyệt vời');
 }
-console.log(11 + 22)
+console.log(11 + 22);
