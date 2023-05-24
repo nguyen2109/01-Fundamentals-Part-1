@@ -50,13 +50,32 @@ console.log(myAge); // = 22
 
       <li>
         <h3>Const</h3>
-        <p>Khi nào sử dụng const?</p>
+        <p>
+          Nên sử dụng const trong đa số các trường hợp (chỉ sử dụng let khi thật
+          sự chắc chắn rằng nó sẽ được thay đổi trong code) nếu luôn sử dụng let
+          có thể gây ra rất nhiều bugs
+        </p>
         <pre>
 onst constMyAge; // lỗi const không thể là 1 biến rỗng
 const constMyAge = 19;
 constMyAge = 22; // lỗi
 console.log(constMyAge); // lỗi không thể in ra
         </pre>
+      </li>
+      <li>
+        <h3>Var</h3>
+        <p>
+          Không nên sử dụng var vì 1 khi đã sử dụng var thì tất cả điểm dưới sẽ biến thành biến toàn cục
+        </p>
+        <p>
+          Về cơ bản thì var giống với let nhưng hãy nhìn vào ví dụ dưới đây : 
+          <pre>
+var myFirstName = 'Khoa'
+myFullName = 'Nguyen'
+console.log(myFullName); // = Nguyen
+          </pre>
+        </p>
+
       </li>
     </ul>
 
