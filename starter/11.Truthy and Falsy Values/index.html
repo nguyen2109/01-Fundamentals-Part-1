@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JavaScript Fundamentals – Part 1</title>
+    <style>
+      * {
+        font-family: sans-serif;
+        color: white;
+      }
+      body {
+        height: 200vh;
+        background: linear-gradient(to top left, #28b487, #7dd56f);
+      }
+      h1 {
+        font-family: sans-serif;
+        font-size: 50px;
+        line-height: 1.3;
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+        color: white;
+      }
+      pre {
+        text-align: left;
+        font-family: monospace;
+        font-size: 14px;
+        background-color: #f1f1f1;
+        padding: 20px;
+        color: #333;
+        white-space: pre-wrap;
+      }
+    </style>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <h1>JavaScript Fundamentals – Part 1</h1>
+    <h2>11.Truthy and Falsy Values</h2>
+    <p>
+      falsy value hay còn gọi là các giá trị giả mạo ( không trung thực ) <br />
+      Duới đây là các giá trị giả mạo (falsy value)
+     <pre>0 , NaN, undefined , '', null</pre>
+     Sau khi tôi chạy code dưới đây các giá trị đều trả về false:
+     <pre>
+      console.log(Boolean(0)); 
+      console.log(Boolean(undefined));
+      console.log(Boolean(''));
+      console.log(Boolean(null));
+     </pre>  
+     Tại sao lại trả về false ? <br>
+     Trả lời : trả về false vì đều chứa các giá trị không trung thực
+    </p>
+    <p>
+      Tiếp tục với 1 ví dụ khác : 
+      <pre>
+const myMoney = 0;
+
+if (myMoney) {
+  console.log('Bạn đã có tiền, đừng tiêu nó hết nhé');
+} else {
+  console.log('Bạn nghèo vl, chả nổi 1 đồng trong người');
+}
+      </pre>
+      Kết quả : <pre>Bạn nghèo vl, chả nổi 1 đồng trong người</pre>
+    </p>
+    <p>Tại sao lại có kết quả này ?</p>
+    <p>Vì khi ta sử dụng Boolean(0) sẽ trả về false </p>
+    và với đoạn code trên thì ta hiểu nó như sau : 
+    <pre>
+      if(true){
+        ... thực thi code nếu điều kiện là true
+      } else {
+        ... thực thi code nếu điều kiện khác true
+      }
+    </pre>
+    <p>Đó là kết quả vì console.log lại in ra <b>Bạn nghèo vl, chả nổi 1 đồng trong người</b> </p>
+  </body>
+</html>
