@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JavaScript Fundamentals – Part 1</title>
+    <style>
+      * {
+        color: white;
+      }
+      body {
+        height: 200vh;
+        background: linear-gradient(to top left, #28b487, #7dd56f);
+      }
+      h1 {
+        font-family: sans-serif;
+        font-size: 50px;
+        line-height: 1.3;
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+        color: white;
+      }
+      pre {
+        text-align: left;
+        font-family: monospace;
+        font-size: 14px;
+        background-color: #f1f1f1;
+        padding: 20px;
+        color: #333;
+        white-space: pre-wrap;
+      }
+    </style>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <h1>JavaScript Fundamentals – Part 1</h1>
+    <h2>Coding Challenge #1</h2>
+    <p>
+      Mark and John are trying to compare their BMI (Body Mass Index), which is
+      calculated using the formula: BMI = mass / height ** 2 = mass / (height *
+      height) (mass in kg and height in meter).
+    </p>
+    <br />
+    <p>
+      Your tasks: <br />1. Store Mark's and John's mass and height in variables
+      <br />
+      2. Calculate both their BMIs using the formula (you can even implement
+      both versions)
+      <br />
+      3. Create a Boolean variable 'markHigherBMI' containing information about
+      whether Mark has a higher BMI than John.
+    </p>
+    <p>
+      Test data: <br />
+      Data 1: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is
+      1.95 m tall.
+      <br />
+      Data 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is
+      1.76 m tall.
+    </p>
+    <h2>Lời giải cho bài tập :</h2>
+    <pre>
+// Mark and John are trying to compare their BMI (Body Mass Index), which is
+// calculated using the formula: BMI = mass / height ** 2 = mass / (height *
+// height) (mass in kg and height in meter).
+
+// 1. Store Mark's and John's mass and height in variables
+const markMass = 95; // 78kg
+const johnMass = 85; // 92kg
+const markHeight = 188; // 169cm
+const johnHeight = 176; // 195cm
+
+// 2. Calculate both their BMIs using the formula (you can even implement both versions)
+//BMI = mass / height ** 2 = mass / (height * height)
+const markBMI = markMass / markHeight ** 2;
+console.log(`Mark BMI : ${markBMI}`); // Mark BMI : 0.0024691358024691358
+const johnBMI = johnMass / johnHeight ** 2;
+console.log(`John BMI : ${johnBMI}`); //John BMI : 0.0027548209366391185
+
+//3. Create a Boolean variable 'markHigherBMI' containing information about
+//whether Mark has a higher BMI than John.
+
+const markHigherBMI = markBMI > johnBMI;
+console.log(`BMI của Mark có cao hơn không ? : ${markHigherBMI}`); // true
+
+// Data 1: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m tall. -> true
+
+//Data 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76 m tall. -> false
+
+    </pre>
+  </body>
+</html>
