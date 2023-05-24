@@ -15,7 +15,7 @@ console.log(`Mark BMI : ${markBMI}`); // Mark BMI : 0.0024691358024691358
 const johnBMI = johnMass / johnHeight ** 2;
 console.log(`John BMI : ${johnBMI}`); //John BMI : 0.0027548209366391185
 
-//3. Create a Boolean variable 'markHigherBMI' containing information about
+//3. Create a Boolean variable 'markHighaerBMI' containing information about
 //whether Mark has a higher BMI than John.
 
 const markHigherBMI = markBMI > johnBMI;
