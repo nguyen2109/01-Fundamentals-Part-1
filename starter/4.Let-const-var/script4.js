@@ -15,4 +15,8 @@ const constMyAge = 19;
 constMyAge = 22; // lỗi
 console.log(constMyAge); // lỗi không thể in ra
 
+var myFirstName = 'Khoa'
+myFullName = 'Nguyen'
+console.log(myFullName); // = Nguyen
+
 
