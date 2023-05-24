@@ -36,6 +36,29 @@
   <body>
     <h1>JavaScript Fundamentals – Part 1</h1>
     <h2>4.Let,const and var ?</h2>
+    <ul>
+      <li>
+        <h3>Let</h3>
+        <p>Khi nào thì cần sử dụng let ?</p>
+        <p>Nếu cần thay đổi giá trị của 1 biến thì sử dụng let</p>
+        <pre>
+let myAge; //có thể khai báo là 1 biến rỗng 
+myAge = 22; 
+console.log(myAge); // = 22
+        </pre>
+      </li>
+
+      <li>
+        <h3>Const</h3>
+        <p>Khi nào sử dụng const?</p>
+        <pre>
+onst constMyAge; // lỗi const không thể là 1 biến rỗng
+const constMyAge = 19;
+constMyAge = 22; // lỗi
+console.log(constMyAge); // lỗi không thể in ra
+        </pre>
+      </li>
+    </ul>
 
     <script src="./script4.js"></script>
   </body>
