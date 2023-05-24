@@ -6,10 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>JavaScript Fundamentals – Part 1</title>
     <style>
+      * {
+        color: white;
+      }
       body {
-        height: 100vh;
-        display: flex;
-        align-items: center;
+        height: 200vh;
         background: linear-gradient(to top left, #28b487, #7dd56f);
       }
       h1 {
@@ -21,17 +22,57 @@
         text-align: center;
         color: white;
       }
+      pre {
+        text-align: left;
+        font-family: monospace;
+        font-size: 14px;
+        background-color: #f1f1f1;
+        padding: 20px;
+        color: #333;
+        white-space: pre-wrap;
+      }
     </style>
     <script src="./script.js"></script>
   </head>
   <body>
     <h1>JavaScript Fundamentals – Part 1</h1>
-    <h2>2.Data Type</h2>
+    <h2>3.Data Type</h2>
     <p>
       <li>
         THE 7 PRIMITIVE DATA TYPES
         <ul>
           1. Number: Floating point numbers 👉 Used for decimals and integers
+          <pre>let myAge = 19</pre>
+        </ul>
+        <ul>
+          2. String: Sequence of characters 👉 Used for text
+          <pre>let myFullName = 'Dao Khoa Nguyen'</pre>
+        </ul>
+
+        <ul>
+          3. Boolean: Logical type that can only be true or false 👉 Used for
+          taking decisions
+          <pre>let turnOn = true;</pre>
+          <pre>let shutDown = false</pre>
+        </ul>
+
+        <ul>
+          4. Undefined: Value taken by a variable that is not yet defined
+          (‘empty value’)
+          <pre>
+let someThing = where 
+          => console.log(someThing) = Undefined
+          </pre>
+        </ul>
+        <ul>
+          5. Null: Also means ‘empty value’
+        </ul>
+        <ul>
+          6. Symbol (ES2015): Value that is unique and cannot be changed [Not
+          useful for now]
+        </ul>
+        <ul>
+          7. BigInt (ES2020): Larger integers than the Number type can hold
         </ul>
       </li>
     </p>
