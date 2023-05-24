@@ -14,3 +14,5 @@ const constMyAge; // lỗi const không thể là 1 biến rỗng 'const' declar
 const constMyAge = 19;
 constMyAge = 22; // lỗi
 console.log(constMyAge); // lỗi không thể in ra
+
+
